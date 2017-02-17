@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML 5 and JS form Validation</title>
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="processor.js"></script>
+
+</head>
+<body>
+
+    <p>
+        This JS attached to this form will prevent the form from submitting and change field border color to red unless user corrects thee invalid or empty fields.
+    </p>
+
+    <form id="my_form" action="" method="get">
+
+        <label>Name:<input type="text" name="name_field" doJsValidate="true"/></label>
+
+        <label>Email:<input type="email" name="email_field" doJsValidate="true"/></label>
+
+        <label>Password:<input type="password" name="password_field" doJsValidate="true"/></label>
+
+        <label>Message:<textarea name="message" doJsValidate="true"> </textarea></label>
+
+        <input type="submit"/>
+
+    </form>
+
+
+</body>
+</html>
